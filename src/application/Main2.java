@@ -33,7 +33,16 @@ public class Main2 {
 		departmentDao.insert(newDepartment);
 		System.out.println(newDepartment);
 		
-
+		
+		
+		System.out.println("=== teste 2 : update === \n");
+		
+		department = departmentDao.findById(3);
+		department.setName("Celular");
+		departmentDao.update(department);
+		
+		
+		System.out.println(departmentDao.findById(3));
 	}
 
 }
