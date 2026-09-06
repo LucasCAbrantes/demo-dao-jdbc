@@ -26,6 +26,13 @@ public class Main2 {
 		for(Department obj : list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("=== teste 2 : findAll === \n");
+		
+		Department newDepartment = new Department(null, "Food");
+		departmentDao.insert(newDepartment);
+		System.out.println(newDepartment);
+		
 
 	}
 
